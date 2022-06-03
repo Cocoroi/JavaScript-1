@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 1 - Exo 10</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+<body class="bg">
+<section>
+    <!--for demo wrap-->
+    <h1>Liste de planètes</h1>
+    <button onclick="add()" style="margin-bottom: 3%;">Ajouter une planète</button>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+            <tr>
+                <th>Index</th>
+                <th id="nom" class="cursor" onclick="triN(this)">Nom ↓</th>
+                <th id="taille" class="cursor" onclick="triTa(this)">Taille (rayon en km)</th>
+                <th id="masse" class="cursor" onclick="triM(this)">Masse (en kg *10²³)</th>
+                <th id="type" class="cursor" onclick="triTy(this)">Type</th>
+                <th id="distance" class="cursor" onclick="triD(this)">Distance (au soleil en km)</th>
+                <th>Edit/Delete</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script src="exo10.js" type="text/javascript"></script>
+</body>
+</html>
